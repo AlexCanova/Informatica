@@ -1,21 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package tavolapitagorica;
 
-/**
- *
- * @author ALEX.CANOVA
- */
 public class TavolaPitagorica {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
-}
+    for (int i = 1; i <= 10; i++) {
+	    for (int j = 1; j <= 10; j++) {
+		int prodotto = i*j;
+		if (prodotto < 10) 
+		    System.out.print("   "); 
+		else if (prodotto < 100) 
+		    System.out.print("  ");
+		else
+		    System.out.print(" ");
+		System.out.print(i*j); 
+	    }
+	    System.out.println();
+	}
+
+
+    } // fine metodo main
+
+} // fine classe  
+   
