@@ -6,16 +6,28 @@ import java.util.Scanner;
 public class Es2Pigreco {
 
     public static void main(String[] args) {
-      double piGreco = 0; 
+      double piGreco = 4; 
       double piPrec = 0;
-      double prec = 0;
+      double prec;
       double termine = 0;
-      long denom = 0;
+      long denom = 3;
+      boolean daSommare = false;
       
       Scanner tastiera = new Scanner (System.in);
-        System.out.println("Inserisci la precisione: ");
+        System.out.print("Inserisci la precisione: ");
         prec = tastiera.nextDouble();
         do{
-    } while (Math.abs(piGreco - piPrec) > prec);
+           termine = 4.0d / denom;
+           piPrec = piGreco;
+           if (daSommare) {
+               piGreco += termine;
+           } else {
+               piGreco -= termine;
+           }
+           denom += 2;
+           daSommare = !daSommare;
+        } while (Math.abs(piGreco - piPrec) > prec);
+        System.out.println("piGreco = " +piGreco );
     
+    }
 }
