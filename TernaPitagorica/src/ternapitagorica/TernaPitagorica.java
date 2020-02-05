@@ -22,7 +22,7 @@ public class TernaPitagorica {
             else {
             System.out.print("Questi numeri non formano una terna pitagorica!");
         }
-      2
+      
     }
 
 }
